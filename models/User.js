@@ -19,10 +19,11 @@ const userSchema = new Schema({
         ],
     },
     thoughts: [
-       { type: Schema.Types.ObjectId,
-        ref: 'Thought',
-        default: [],
-    },
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Thought',
+            default: [],
+        },
     ],
     friends: [
         {
@@ -37,3 +38,12 @@ const userSchema = new Schema({
     },
     id: false,
 });
+
+// a virtual called friendCount that retrieves the length of the user's friends array field on query
+userSchema.virtual('friendCount').get(function () {
+    return `${this.id}`;
+});
+
+
+// Create and export the collection so that we can use it in other files
+module.exports = model('User', userSchema);
