@@ -6,7 +6,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 
-mongoose.connect('')
+mongoose.connect(`${process.env.MONGO}`)
   .then(() => {
     console.log('Mongoose is happy!!!!');
   })
