@@ -11,33 +11,37 @@ const userSchema = new Schema({
     email: {
         type: String,
         unique: true,
-        required: true,
-        validate: [validateEmail, "Please fill a valid email address"],
-        match: [
-            /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-            "Please fill a valid email address",
-        ],
-    },
-    thoughts: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Thought',
-            default: [],
+        validate: {
+            validator: function (v) {
+                return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v);
+            },
+            message: "Please enter a valid email"
         },
-    ],
-    friends: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'User',
-            default: [],
-        }
-    ],
-    timestamps: true,
-    toJSON: {
-        virtuals: true,
-    },
-    id: false,
-});
+        required: [
+            true, 
+            "Email required"
+        ],
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought',
+                default: [],
+            },
+        ],
+        friends: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'User',
+                default: [],
+            }
+        ],
+        // timestamps: true,
+        toJSON: {
+            virtuals: true,
+        },
+        id: false,
+    }
+    })
 
 // a virtual called friendCount that retrieves the length of the user's friends array field on query
 userSchema.virtual('friendCount').get(function () {
