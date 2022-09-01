@@ -6,7 +6,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 
-mongoose.connect('mongodb+srv://nanifer:monsp1dergo@cluster0.i3o3tur.mongodb.net/socialNetworkDB?retryWrites=true&w=majority')
+mongoose.connect('')
   .then(() => {
     console.log('Mongoose is happy!!!!');
   })
