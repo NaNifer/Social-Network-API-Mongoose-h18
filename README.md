@@ -12,7 +12,6 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -50,23 +49,19 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ### Demo
 A [walkthrough video](https://www.example.com) that demonstrates its functionality.
 
-### Screenshot
-
-![](./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/NaNifer/Social-Network-API-Mongoose-h18)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
+- NodeJS
+- Express.js
+- Mongoose
+- Mongo Database​
 
 ### What I learned
 
@@ -86,18 +81,10 @@ To see how you can add code snippets, see below:
 
 If you want more help with writing markdown, check out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [Stack Overflow](https://stackoverflow.com/questions/18022365/mongoose-validate-email-syntax) - Mongoose - validate email syntax
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How to Seed MongoDB Database From Node](https://javascript.plainenglish.io/seeding-mongodb-database-from-node-the-simplest-way-3d6a0c1c4668) - A simple and straightforward article on seeding your MongoDB database.
 
 ## Author
 
