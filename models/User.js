@@ -18,7 +18,7 @@ const userSchema = new Schema({
             message: "Please enter a valid email"
         },
         required: [
-            true, 
+            true,
             "Email required"
         ],
         thoughts: [
@@ -41,7 +41,7 @@ const userSchema = new Schema({
         },
         id: false,
     }
-    })
+})
 
 // a virtual called friendCount that retrieves the length of the user's friends array field on query
 userSchema.virtual('friendCount').get(function () {
