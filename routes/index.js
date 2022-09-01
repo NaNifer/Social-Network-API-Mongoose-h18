@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const apiRoutes = require('./api');
+const apiRoutes = require('./apiRoutes');
 router.use('/api', apiRoutes);
 
 router.use((req , res) => res.send('Bad route'));

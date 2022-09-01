@@ -2,6 +2,7 @@ const express = require('express');
 require('dotenv').config();
 const mongoose = require('mongoose');
 const { Reaction, Thought, User } = require('./models');
+const routes = require('./routes');
 
 const app = express();
 
@@ -15,6 +16,7 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(routes)
 
 
 app.listen(PORT, () => {
