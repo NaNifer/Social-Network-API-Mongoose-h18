@@ -47,7 +47,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ```
 
 ### Demo
-A [walkthrough video](https://www.example.com) that demonstrates its functionality.
+A [walkthrough video](https://drive.google.com/file/d/1qlYVXGY_6yPDJhXmqOTJO5r-SlZDhvRc/view) that demonstrates its functionality.
 
 ### Links
 
